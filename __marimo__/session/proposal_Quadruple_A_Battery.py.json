@@ -1,0 +1,136 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.24.0",
+    "script_metadata_hash": null
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "7404b13af6e563bc9e4e51b7a7944087",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"si385-project-proposal\">SI385 Project Proposal</h1>\n<h2 id=\"group-name-quadruple-a-battery\">Group Name: Quadruple A Battery</h2>\n<span class=\"paragraph\">Group Members: Faye Guan, Jessica Moon, Sean Park, Xiwen Mark</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "724241c4e7df7f9fd5daa1c8bed89468",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "5d9e727ea2fa0e79672fff4baf20930d",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"1-question\">1. Question</h2>\n<span class=\"paragraph\"><strong>Topic: Predicting Theme Park Ride Wait Times</strong></span>\n<span class=\"paragraph\"><strong>Research Question:</strong> How do ride wait times vary by time of day, day of the week, and ride characteristics?</span>\n<span class=\"paragraph\">Use time, weekday, and ride identity to predict how long visitors might wait.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "4670c4f5a834112454f4704493793f70",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"2-dataset\">2. Dataset</h2>\n<h3 id=\"data-1-httpschartthemagiccomopen-data\">Data 1: <a href=\"https://chartthemagic.com/open-data\" rel=\"noopener noreferrer\" target=\"_blank\">https://chartthemagic.com/open-data</a></h3>\n<h3 id=\"data-2-httpshuggingfacecodatasetsmatanzigdisney-theme-park-queue-dynamics\">Data 2: <a href=\"https://huggingface.co/datasets/matanzig/Disney-Theme-Park-Queue-Dynamics\" rel=\"noopener noreferrer\" target=\"_blank\">https://huggingface.co/datasets/matanzig/Disney-Theme-Park-Queue-Dynamics</a></h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "34a3af4017a7836e716ce155f0547cf8",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"data-1\">Data 1</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": "3a1847c18a05702a193bad06b921c730",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "Xref",
+      "code_hash": "fccd369097e933c45022f9e8e3f78f92",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "SFPL",
+      "code_hash": "0cc18f561d37511ceb274ac73352e4ca",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "BYtC",
+      "code_hash": "bdf3bf9ce47c9ed9bb4f6d32ec1a074b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"data-2\">Data 2</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "RGSE",
+      "code_hash": "f414c49fdd778a4675e1794af49b5dbf",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "Kclp",
+      "code_hash": "9a205d6b80bbdd9509177b8dce88c11c",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "emfo",
+      "code_hash": "631ae94c1cb60ceb9667d1d1980d4dbb",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"3-motivation\">3. Motivation</h2></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Hstk",
+      "code_hash": "9820ddd126a8fe0c81ce14e4a2d1d331",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"4-division-of-labour\">4. Division of Labour</h2></span>"
+          }
+        }
+      ],
+      "console": []
+    }
+  ]
+}
