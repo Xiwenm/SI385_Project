@@ -115,48 +115,7 @@ def _(hourly_wait):
 
     hourly_wait.head()
     return
-
-
-@app.cell(hide_code=True)
-def _(mo):
-    mo.md(r"""
-    ### Data 2
-    """)
-    return
-
-
-@app.cell
-def _(pd):
-    hf_url = (
-        "https://huggingface.co/datasets/"
-        "matanzig/Disney-Theme-Park-Queue-Dynamics/"
-        "resolve/main/disney_cleaned_dataset.csv"
-    )
-
-    # Load only a sample
-    hf_wait = pd.read_csv(hf_url, nrows=100_000)
-
-    print("Rows:", len(hf_wait))
-    print("Columns:", hf_wait.columns.tolist())
-
-    hf_wait.head()
-    return (hf_wait,)
-
-
-@app.cell
-def _(hf_wait, pd):
-    #Data Prep
-    hf_wait["DEB_TIME"] = pd.to_datetime(
-        hf_wait["DEB_TIME"], errors="coerce"
-    )
-
-    hf_wait["hour"] = hf_wait["DEB_TIME"].dt.hour
-    hf_wait["weekday"] = hf_wait["DEB_TIME"].dt.day_name()
-    hf_wait["month"] = hf_wait["DEB_TIME"].dt.month
-
-    hf_wait.head()
-    return
-
+    
 
 @app.cell(hide_code=True)
 def _(mo):
