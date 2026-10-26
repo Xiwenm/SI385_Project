@@ -32,22 +32,23 @@ def _():
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    ##1. Question
-    **Topic: Predicting Theme Park Ride Wait Times**
+    ## 1. Question
 
-    **Research Question:** How do ride wait times vary by time of day, day of the week, and ride characteristics?
-
-    Use time, weekday, and ride identity to predict how long visitors might wait.
+    To what extent do time of day, day of week, and individual rides predict posted standby wait times at Walt Disney World and Universal Orlando between June and September 2026?
     """)
     return
-
+    
 
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
     ## 2. Dataset
-    ###Data 1: https://chartthemagic.com/open-data
-    ###Data 2: https://huggingface.co/datasets/matanzig/Disney-Theme-Park-Queue-Dynamics
+
+    We will use the Chart the Magic open wait-time dataset (chartthemagic.com/open-data, CC BY 4.0). The data comes from ThemeParks.wiki and records posted wait times for major rides at Walt Disney World and Universal Orlando every 10 minutes.
+
+    We will use four months of data from June to September 2026, including two types of files. The daily file includes information such as park, ride, average wait time, peak posted wait time, and number of readings for each day. We will use this to compare wait times across days of the week and different attractions. The hourly file shows average wait times for each ride by hour, averaged over each month. We will use this to look at how wait times change throughout the day.
+
+    We can connect the two files using the ride ID. However, since the hourly data is averaged by month, we cannot directly compare time of day and day of week together. Instead, we will analyze them separately.
     """)
     return
 
@@ -161,6 +162,8 @@ def _(hf_wait, pd):
 def _(mo):
     mo.md(r"""
     ## 3. Motivation
+
+    Theme park visitors often spend a significant amount of time waiting in lines at Walt Disney World and Universal Orlando, which can make it difficult to plan the day efficiently. Understanding how wait times vary by time of day, day of week, and attraction could help visitors decide when to visit the park, when to go on certain rides, and reduce unnecessary waiting. These findings could also help theme park operators better understand demand patterns and improve crowd management.
     """)
     return
 
@@ -169,6 +172,13 @@ def _(mo):
 def _(mo):
     mo.md(r"""
     ## 4. Division of Labour
+
+    * **Jessica:** Analyze how wait times change throughout the day and identify which hours have the longest wait times.
+    * **Faye:** Analyze how wait times differ across days of the week and compare weekdays and weekends.
+    * **Sean:** Compare wait times across individual rides and identify which rides tend to have longer wait times.
+    * **Xiwen:** Develop and evaluate regression models predicting posted standby wait times: one using day of week and attraction (daily file), and one using time of day and attraction (hourly file), and compare how much each factor explains.
+
+    All team members will contribute to data cleaning, interpreting the results, and reviewing the final notebook.
     """)
     return
 
